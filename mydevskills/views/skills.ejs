@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>list of <%= title %></p>
+    <form method="post" action="/skills/formsubmitskill">
+      <input name= "inputskills" placeholder="enter your dev skills"></input>
+      <button type= "submit">submit</button>
+    </form>
+    <form method="post" action="/delete/formdeleteskill">
+      <input name= "deleteskills" placeholder="delete your dev skills"></input>
+      <button type="submit" >delete</button>
+    </form>
+  </body>
+</html>
